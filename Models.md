@@ -28,6 +28,8 @@ Liabilities balance = income statements
   - liability_balance
   - created_at
   - created_resource
+  - status (open, closed, error)
+  - status_message
 
 ## Potential more fields
 
