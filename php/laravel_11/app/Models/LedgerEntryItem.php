@@ -9,9 +9,10 @@ class LedgerEntryItem extends Model
     protected $table = 'ledger_entry_items';
     protected $fillable = [
         'ledger_entry_id',
-        'asset_balance',
-        'liability_balance',
-        'created_at',
+        'ledger_id',
+        'asset_amount',
+        'liability_amount',
+        'description',
         'created_resource',
     ];
 

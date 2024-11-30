@@ -54,11 +54,11 @@ Liabilities balance = income statements
   - id
   - ledger_entry_id
   - account_id
-  - amount
+  - asset_amount
+  - liability_amount
+  - processed_date
   - created_at
   - created_resource
-  - type (asset, liability, equity, revenue, expense)
-  - txtype (debit, credit)
   - currency (str)
   - description
   

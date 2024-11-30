@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class LedgerEntry extends Model
 {
@@ -39,12 +40,14 @@ class LedgerEntry extends Model
         return $entry;
     }
 
-    public function addItem(int $asset_amount, int $liability_amount, $created_resource)
+    public function addItem(int $asset_amount, int $liability_amount, $created_resource, string $description)
     {
         return $this->items()->create([
+            'ledger_id' => $this->ledger_id,
             'asset_amount' => $asset_amount,
             'liability_amount' => $liability_amount,
             'created_resource' => $created_resource,
+            'description' => $description,
         ]);
     }
 
@@ -53,19 +56,25 @@ class LedgerEntry extends Model
         // sum up assets and liabilities
         // they must balance out
 
-        $assets = $this->items()->sum('liability_amount');
-        $liabilities = $this->items()->sum('asset_amount');
+        $assets = $this->items()->sum('asset_amount');
+        $liabilities = $this->items()->sum('liability_amount');
 
-        if ($assets != $liabilities) {
+//        if ($assets != $liabilities) {
+//            $this->status = 'failed';
+//            $this->status_message = 'Assets and liabilities do not balance out';
+//            $this->save();
+//            return false;
+//        }
+
+        if ($this->liabilities_balance != $liabilities) {
             $this->status = 'failed';
-            $this->status_message = 'Assets and liabilities do not balance out';
+            $this->status_message = 'liabilities do not match the ledger';
             $this->save();
             return false;
         }
-
-        if ($this->assets_balance != $assets || $this->liabilities_balance != $liabilities) {
+        if ($this->assets_balance != $assets ) {
             $this->status = 'failed';
-            $this->status_message = 'Assets and liabilities do not match the ledger';
+            $this->status_message = 'Assets do not match the ledger';
             $this->save();
             return false;
         }
