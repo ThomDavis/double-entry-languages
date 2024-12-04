@@ -1,0 +1,17 @@
+{
+    "name": "thomdavis/php84",
+    "autoload": {
+        "psr-4": {
+            "Thomdavis\\Php84\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thom Davis",
+            "email": "Techthomdavis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4"
+    }
+}
