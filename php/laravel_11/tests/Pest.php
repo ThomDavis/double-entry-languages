@@ -11,8 +11,10 @@
 |
 */
 
+use App\Models\Ledger;
+
 pest()->extend(Tests\TestCase::class)
- // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+  ->use(Illuminate\Foundation\Testing\DatabaseTransactions::class)
     ->in('Feature');
 
 /*
@@ -43,5 +45,5 @@ expect()->extend('toBeOne', function () {
 
 function something()
 {
-    // ..
+    Ledger::firstOrCreate(['name' => 'laravel']);
 }
