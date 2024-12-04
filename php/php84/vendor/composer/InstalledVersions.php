@@ -253,7 +253,7 @@ class InstalledVersions
     }
 
     /**
-     * Returns the raw installed.php data for custom implementations
+     * Returns the raw installed.php Data for custom implementations
      *
      * @deprecated Use getAllRawData() instead which returns all datasets for all autoloaders present in the process. getRawData only returns the first dataset loaded, which may not be what you expect.
      * @return array[]
@@ -277,7 +277,7 @@ class InstalledVersions
     }
 
     /**
-     * Returns the raw data of all installed.php which are currently loaded for custom implementations
+     * Returns the raw Data of all installed.php which are currently loaded for custom implementations
      *
      * @return array[]
      * @psalm-return list<array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>}>
@@ -295,12 +295,12 @@ class InstalledVersions
      * and wants to ensure both projects have access to their version of installed.php.
      *
      * A typical case would be PHPUnit, where it would need to make sure it reads all
-     * the data it needs from this class, then call reload() with
+     * the Data it needs from this class, then call reload() with
      * `require $CWD/vendor/composer/installed.php` (or similar) as input to make sure
      * the project in which it runs can then also use this class safely, without
      * interference between PHPUnit's dependencies and the project's dependencies.
      *
-     * @param  array[] $data A vendor/composer/installed.php data set
+     * @param  array[] $data A vendor/composer/installed.php Data set
      * @return void
      *
      * @psalm-param array{root: array{name: string, pretty_version: string, version: string, reference: string|null, type: string, install_path: string, aliases: string[], dev: bool}, versions: array<string, array{pretty_version?: string, version?: string, reference?: string|null, type?: string, install_path?: string, aliases?: string[], dev_requirement: bool, replaced?: string[], provided?: string[]}>} $data
