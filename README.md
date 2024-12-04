@@ -11,6 +11,7 @@ Create ledger entry -> items
 Update ledger balance and return checkout.
 
 
+
 # Outcome
 Measure memory, CPU and process time.
 
