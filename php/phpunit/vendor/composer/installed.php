@@ -3,7 +3,7 @@
         'name' => 'thomdavis/phpunit',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'dd06d1b876b0d4724848409547bd3ffc85b25cd9',
+        'reference' => 'c86619c232e57701bc9e30d8f46cac48e740727d',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -247,7 +247,7 @@
         'thomdavis/phpunit' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dd06d1b876b0d4724848409547bd3ffc85b25cd9',
+            'reference' => 'c86619c232e57701bc9e30d8f46cac48e740727d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
