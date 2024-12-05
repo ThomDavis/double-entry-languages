@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Data;
+namespace Php84\Data;
 
 // drop tables and rerun migrations file
-
-require 'db.php';
+$pdo = DB::pdo();
 
 // drop tables
 $sql = "DROP TABLE IF EXISTS ledgers";

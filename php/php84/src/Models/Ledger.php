@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Php84\Models;
 
 class Ledger
 {

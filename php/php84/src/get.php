@@ -1,13 +1,13 @@
 <?php
 
+namespace Php84;
 
-namespace App;
 
 global $pdo;
 
 use PDO;
 
-require 'Data/db.php';
+require 'Data/DB.php';
 
 $sql = "SELECT * FROM ledgers";
 $stmt = $pdo->prepare($sql);

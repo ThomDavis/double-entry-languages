@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Data;
+namespace Php84\Data;
 
-
-include 'db.php';
+$pdo = DB::pdo();
 
 // create ledgers table // create ledgers table
 $sql = "CREATE TABLE IF NOT EXISTS ledgers (

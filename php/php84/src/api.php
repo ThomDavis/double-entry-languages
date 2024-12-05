@@ -1,10 +1,11 @@
 <?php
 
-namespace App;
+namespace Php84;
 
 use PDO;
+use Php84\Data\DB;
 
-require 'Data/db.php';
+$pdo = DB::pdo();
 
 function isRoute(string $method, string $route, array ...$handlers): int
 {
@@ -22,8 +23,7 @@ function json(mixed $data): void
 }
 
 (match(1) {
-    isRoute('GET', '/') => function () {
-        global $pdo;
+    isRoute('GET', '/') => function () use ($pdo) {
         $sql = "SELECT * FROM ledgers";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();

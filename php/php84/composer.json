@@ -2,7 +2,7 @@
   "name": "thomdavis/php84",
   "autoload": {
     "psr-4": {
-      "Thomdavis\\Php84\\": "src/"
+      "Php84\\": "src/"
     }
   },
   "authors": [
@@ -13,5 +13,13 @@
   ],
   "require": {
     "php": "^8.4"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.4"
   }
 }
