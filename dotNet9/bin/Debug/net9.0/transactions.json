@@ -1,0 +1,127 @@
+[
+  {
+    "main_description": "Ledger Entry 1",
+    "asset_balance": 17470,
+    "liability_balance": 8720,
+    "records": [
+      {
+        "asset_amount": 7895,
+        "liability_amount": 3450,
+        "description": "Transaction for item 2",
+        "date": "2024-06-20"
+      },
+      {
+        "asset_amount": 3650,
+        "liability_amount": 1780,
+        "description": "Transaction for item 3",
+        "date": "2024-01-10"
+      },
+      {
+        "asset_amount": 5020,
+        "liability_amount": 2340,
+        "description": "Transaction for item 5",
+        "date": "2024-02-27"
+      },
+      {
+        "asset_amount": 905,
+        "liability_amount": 1150,
+        "description": "Adjustment record 1",
+        "date": "2024-11-30"
+      }
+    ]
+  },
+  {
+    "main_description": "Ledger Entry 2",
+    "asset_balance": 14450,
+    "liability_balance": 6825,
+    "records": [
+      {
+        "asset_amount": 7200,
+        "liability_amount": 3800,
+        "description": "Transaction for item 8",
+        "date": "2024-11-05"
+      },
+      {
+        "asset_amount": 8050,
+        "liability_amount": 3025,
+        "description": "Transaction for item 9",
+        "date": "2024-10-22"
+      },
+      {
+        "asset_amount": -800,
+        "liability_amount": 0,
+        "description": "Correction record",
+        "date": "2024-11-10"
+      }
+    ]
+  },
+  {
+    "main_description": "Ledger Entry 3",
+    "asset_balance": 19270,
+    "liability_balance": 8310,
+    "records": [
+      {
+        "asset_amount": 4820,
+        "liability_amount": 2100,
+        "description": "Transaction for item 1",
+        "date": "2024-03-15"
+      },
+      {
+        "asset_amount": 9150,
+        "liability_amount": 4230,
+        "description": "Transaction for item 4",
+        "date": "2024-08-05"
+      },
+      {
+        "asset_amount": 4320,
+        "liability_amount": 1980,
+        "description": "Transaction for item 7",
+        "date": "2024-09-14"
+      },
+      {
+        "asset_amount": 980,
+        "liability_amount": 0,
+        "description": "Supplemental record",
+        "date": "2024-09-20"
+      }
+    ]
+  },
+  {
+    "main_description": "Ledger Entry 4",
+    "asset_balance": 6700,
+    "liability_balance": 3120,
+    "records": [
+      {
+        "asset_amount": 6700,
+        "liability_amount": 3120,
+        "description": "Transaction for item 6",
+        "date": "2024-04-18"
+      }
+    ]
+  },
+  {
+    "main_description": "Ledger Entry 5",
+    "asset_balance": 15700,
+    "liability_balance": 7125,
+    "records": [
+      {
+        "asset_amount": 5900,
+        "liability_amount": 2780,
+        "description": "Transaction for item 10",
+        "date": "2024-07-30"
+      },
+      {
+        "asset_amount": 7200,
+        "liability_amount": 3125,
+        "description": "Transaction for item 11",
+        "date": "2024-10-12"
+      },
+      {
+        "asset_amount": 2600,
+        "liability_amount": 1220,
+        "description": "Transaction for item 12",
+        "date": "2024-11-01"
+      }
+    ]
+  }
+]

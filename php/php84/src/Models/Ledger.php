@@ -1,8 +1,7 @@
 <?php
 
-namespace Php84\Models;
+namespace App\Models;
 
 class Ledger
 {
-
 }
