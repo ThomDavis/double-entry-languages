@@ -1,4 +1,7 @@
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using MvcMovie.Data;
+using MvcMovie.Models;
 
 namespace MvcMovie.Services;
 
@@ -11,6 +14,19 @@ public class LedgerService
         _context = context;
     }
     
+    public object FetchLedger(string id)
+    {
+        using (var context = _context)
+        {
+            var ledger = context.Ledgers
+                .AsQueryable()
+                .SingleOrDefault(b => b.id == id);
+
+
+            return ledger;
+        }
+        
+    }
     
     public void Parse()
     {

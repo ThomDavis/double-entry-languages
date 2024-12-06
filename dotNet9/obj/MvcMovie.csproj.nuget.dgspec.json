@@ -13,6 +13,7 @@
         "packagesPath": "/Users/thomdavis/.nuget/packages/",
         "outputPath": "/Users/thomdavis/Documents/GitHub/double-entry-languages/dotNet9/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/thomdavis/.nuget/NuGet/NuGet.Config"
         ],
@@ -37,8 +38,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net9.0": {
